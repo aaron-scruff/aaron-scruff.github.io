@@ -19,32 +19,8 @@ ul {
   color: white;
   background: black; }
 
-@font-face {
-  font-family: 'pier_sansbold';
-  src: url("/fonts/piersans-bold.woff2") format("woff2"), url("/fonts/piersans-bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'pier_sansregular';
-  src: url("/fonts/piersans-regular.woff2") format("woff2"), url("/fonts/piersans-regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'pier_sanslight';
-  src: url("/fonts/piersans-light.woff2") format("woff2"), url("/fonts/piersans-light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'pier_sansmedium';
-  src: url("/fonts/piersans-medium.woff2") format("woff2"), url("/fonts/piersans-medium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 body {
-  font-family: "pier_sanslight";
+  font-family: 'Inconsolata', monospace;
   color: #2d2d2d; }
 
 a {
@@ -52,6 +28,7 @@ a {
   transition: 0.3s; }
 
 h2, h3, .subtitle {
+  font-family: 'Karla', sans-serif;
   text-transform: uppercase;
   color: #737373;
   font-weight: normal;
@@ -92,8 +69,7 @@ p {
 
 .job-title {
   text-transform: uppercase;
-  font-family: "pier_sansmedium";
-  font-weight: normal;
+  font-family: 'Inconsolata', monospace;
   font-size: 16px;
   padding-bottom: 40px;
   display: block; }
@@ -255,7 +231,7 @@ footer {
     position: absolute;
     right: 30px;
     bottom: 30px;
-    font-family: "pier_sansmedium";
+    font-family: 'Inconsolata', monospace;
     font-size: 12px;
     color: white; }
 
@@ -276,7 +252,7 @@ aside {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 12px;
-    font-family: "pier_sansmedium";
+    font-family: 'Inconsolata', monospace;
     background: white;
     padding: 8px 15px;
     color: #902389;
@@ -595,7 +571,7 @@ main .is-expanded .dropdown__header::before {
   background: #2d2d2d;
   padding: 10px 15px;
   font-size: 15px;
-  font-family: "pier_sansmedium";
+  font-family: 'Inconsolata', monospace;
   display: inline-block;
   -webkit-transition: 0;
   transition: 0;
@@ -638,7 +614,7 @@ main article {
     font-size: 30px;
     max-width: 700px;
     line-height: 41px;
-    font-family: "pier_sansmedium";
+    font-family: 'Karla', sans-serif;
     font-weight: normal; }
 
 main .content {

@@ -1,0 +1,27 @@
+// Basic styling
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+::-moz-selection {
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}

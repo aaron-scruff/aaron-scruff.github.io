@@ -1,0 +1,139 @@
+// Typography
+
+@font-face {
+    font-family: 'pier_sansbold';
+    src: url('/fonts/piersans-bold.woff2') format('woff2'),
+         url('/fonts/piersans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pier_sansregular';
+    src: url('/fonts/piersans-regular.woff2') format('woff2'),
+         url('/fonts/piersans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pier_sanslight';
+    src: url('/fonts/piersans-light.woff2') format('woff2'),
+         url('/fonts/piersans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pier_sansmedium';
+    src: url('/fonts/piersans-medium.woff2') format('woff2'),
+         url('/fonts/piersans-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font: 'pier_sanslight';
+$font-bold: 'pier_sansmedium';
+
+body {
+  font-family: $font;
+  color: $text-default;
+}
+
+a {
+  transition: 0.3s;
+
+  &:hover {
+  }
+}
+
+h2, h3, .subtitle {
+  text-transform: uppercase;
+  color: $text-light;
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+
+  a {
+    background: linear-gradient(90deg, rgba(115,23,147,1) 0%, rgba(244,77,106,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:before, &:after {
+      content: '';
+      background: $primary-color;
+      position: absolute;
+      width: 0;
+      height: 2px;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      transition: all .3s linear;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+    }
+
+    &:after {
+      top: 100%;
+      right: 0;
+    }
+
+    &:hover:before, &:hover:after {
+      width: 100%;
+    }
+  }
+}
+
+.job-title {
+  text-transform: uppercase;
+  font-family: $font-bold;
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 40px;
+  display: block;
+
+  small {
+    display: block;
+    padding-top: 5px;
+  }
+}
+
+.lead-onblack {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+hr {
+  border: none;
+  background-color: #ccc;
+  height: 1px;
+  margin-top: 80px;
+
+  &.push {
+    margin-bottom: 90px;
+  }
+}
+
+.caption {
+  color: $text-light;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  padding-top: 5px;
+}

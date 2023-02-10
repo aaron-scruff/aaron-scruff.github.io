@@ -38,8 +38,8 @@ p {
   font-size: 18px;
   line-height: 30px; }
   p a {
-    background: -webkit-gradient(linear, left top, right top, from(#731793), to(#f44d6a));
-    background: linear-gradient(90deg, #731793 0%, #f44d6a 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#982abc), to(#f44d6a));
+    background: linear-gradient(90deg, #982abc 0%, #f44d6a 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,10 +47,10 @@ p {
     display: inline-block;
     text-decoration: none; }
     p a:hover {
-      color: #1d1d1d; }
+      color: #fff; }
     p a:before, p a:after {
       content: '';
-      background: #1d1d1d;
+      background: #fff;
       position: absolute;
       width: 0;
       height: 2px;
@@ -401,6 +401,10 @@ main.intro {
   background-size: cover; 
  }
 
+main.scrollable {
+  height: auto;
+}
+
 .dark {
   background: white;
   display: block;
@@ -597,22 +601,40 @@ main article {
     font-weight: bold; }
 
 main .content {
-  max-width: 700px;
-  margin: 150px auto 0;
+  max-width: 536px;
   position: relative;
-  top: 0;
-  left: 0;
+  top: 220px;
+  left: 100px; 
+  padding-bottom: 280px;
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  padding: 30px; }
+          transform: translate(0, 0); }
   main .content h1 {
-    margin-bottom: 40px; }
+    margin-bottom: 45px; }
   main .content p {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 17px;
+    line-height: 25px; }
   main .content .btn {
     margin-top: 20px; }
   main .content section {
     margin-bottom: 80px; }
+  main .left {
+    display: inline-block;
+  }
+  main .right {
+    display: inline-block;
+    text-align: right;
+    top: 220px;
+  }
+  main .right .logo-link {
+    display: block;
+  }
+  main .right .icon-behance {
+    margin-right: 0;
+  }
+  main .right p {
+   font-size: 13px; 
+  }
 
 @media only screen and (max-width: 1020px) {
   main article {

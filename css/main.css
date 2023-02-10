@@ -25,13 +25,8 @@ body {
   background: #1C1D21;
 }
 
-a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-
 h2, h3, .subtitle {
   font-family: 'Karla', sans-serif;
-  text-transform: uppercase;
   color: #737373;
   font-weight: normal;
   font-size: 12px;
@@ -71,7 +66,6 @@ p {
       width: 100%; }
 
 .job-title {
-  text-transform: uppercase;
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
   padding-bottom: 40px;
@@ -81,8 +75,8 @@ p {
     padding-top: 5px; }
 
 .lead-onblack {
-  font-size: 21px;
-  line-height: 30px; }
+  font-size: 20px;
+  line-height: 25px; }
 
 hr {
   border: none;
@@ -235,8 +229,8 @@ footer {
     right: 30px;
     bottom: 30px;
     font-family: 'Inconsolata', monospace;
-    font-size: 12px;
-    color: white; }
+    font-size: 14px;
+    color: #1C1D21; }
 
 aside {
   height: 100%; }
@@ -252,7 +246,6 @@ aside {
     padding-right: 0; }
   aside a {
     display: inline-block;
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 12px;
     font-family: 'Inconsolata', monospace;
@@ -325,40 +318,19 @@ aside {
             column-count: 2; } }
 
 .social {
-  padding-top: 30px; }
-  .social .icon-behance {
-    -webkit-mask: url("../img/icons/behance.svg");
-            mask: url("../img/icons/behance.svg"); }
+  padding-top: 20px; }
   .social .icon-linkedin {
-    -webkit-mask: url("../img/icons/linkedin.svg");
-            mask: url("../img/icons/linkedin.svg"); }
+    background: url("../img/icons/logo-linkedin.svg") no-repeat; }
   .social .icon-dribbble {
-    -webkit-mask: url("../img/icons/dribbble.svg");
-            mask: url("../img/icons/dribbble.svg"); }
+    background: url("../img/icons/logo-dribbble.svg") no-repeat; }
+  .social .icon-behance {
+    background: url("../img/icons/logo-behance.svg") no-repeat; }
   .social .icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-    background: #2d2d2d;
-    -webkit-mask-size: cover;
-            mask-size: cover; }
-    .social .icon:hover, .social .icon :focus {
-      background: -webkit-gradient(linear, left top, right top, from(#731793), to(#f44d6a));
-      background: linear-gradient(90deg, #731793 0%, #f44d6a 100%);
-      cursor: pointer; }
-  .social .icon-wide {
-    display: inline-block;
     width: 32px;
-    height: 20px;
-    margin-right: 15px;
-    background: #2d2d2d;
-    -webkit-mask-size: cover;
-            mask-size: cover; }
-    .social .icon-wide:hover, .social .icon-wide :focus {
-      background: -webkit-gradient(linear, left top, right top, from(#731793), to(#f44d6a));
-      background: linear-gradient(90deg, #731793 0%, #f44d6a 100%);
-      cursor: pointer; }
+    height: 32px;
+    margin-right: 20px; }
+      
 
 .about-contact {
   margin: 0;
@@ -430,14 +402,16 @@ main.intro {
  }
 
 .dark {
-  background: black;
+  background: white;
   display: block;
-  padding: 10vh 0;
-  color: white;
+  height: 100vh;
+  color: #1C1D21;
   position: relative; }
   .dark article {
     width: 960px;
     margin: 0 auto;
+    position: relative;
+    top:15vh;
     display: block; }
     .dark article img {
       height: 90vh;
@@ -464,7 +438,6 @@ main .content .dropdown {
     pointer-events: none;
     display: block;
     text-align: center;
-    text-transform: uppercase;
     padding: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -574,15 +547,14 @@ main .is-expanded .dropdown__header::before {
     margin-left: -100px; } }
 
 .btn {
-  text-transform: uppercase;
   text-decoration: none;
-  background: #2d2d2d;
-  padding: 10px 15px;
-  font-size: 15px;
+  background: #1C1D21;
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 3px;
   font-family: 'Inconsolata', monospace;
-  display: inline-block;
-  -webkit-transition: 0;
-  transition: 0; }
+  display: inline-block; }
   .btn:hover, .btn :focus {
     background: -webkit-gradient(linear, left top, right top, from(#731793), to(#f44d6a));
     background: linear-gradient(90deg, #731793 0%, #f44d6a 100%); }
@@ -592,7 +564,7 @@ main .is-expanded .dropdown__header::before {
   color: black; }
 
 .btn-black {
-  background-color: black;
+  background-color: #1C1D21;
   color: white; }
 
 .btn-black-outline {
